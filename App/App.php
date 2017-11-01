@@ -24,6 +24,7 @@ class App
     private function loadRoutes()
     {
         $this->router->addRoute(new Route('/', 'home', 'show'));
+        $this->router->addRoute(new Route('/login', 'session', 'show'));
     }
 
 }
