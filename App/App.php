@@ -3,6 +3,7 @@
 namespace App;
 
 use Core\Router;
+use Core\Route;
 
 class App
 {
@@ -22,7 +23,7 @@ class App
 
     private function loadRoutes()
     {
-        $this->router->addRoute();
+        $this->router->addRoute(new Route('/', 'home', 'show'));
     }
 
 }
