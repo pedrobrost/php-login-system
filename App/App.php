@@ -25,6 +25,8 @@ class App
     {
         $this->router->addRoute(new Route('/', 'home', 'show'));
         $this->router->addRoute(new Route('/login', 'session', 'show'));
+        $this->router->addRoute(new Route('/signIn', 'session', 'signIn'));
+        $this->router->addRoute(new Route('/logout', 'session', 'logout'));
     }
 
 }
