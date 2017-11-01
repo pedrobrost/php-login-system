@@ -15,6 +15,11 @@ class Route
         $this->action = $action;
     }
 
+    public function getPath()
+    {
+        return $this->path;
+    }
+
     public function getController()
     {
         return $this->controller;
